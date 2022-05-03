@@ -110,7 +110,7 @@ class Control_Panal : AppCompatActivity() {
 
     private fun setData(message: String) {
 
-        messagefrombt.text=message
+        Toast.makeText(this,message,Toast.LENGTH_LONG).show()
 
       if(message.toInt()==1){
             //          Play
@@ -145,8 +145,8 @@ class Control_Panal : AppCompatActivity() {
     }
 
     private fun msg(message: String) {
-        val statusView = findViewById<View>(R.id.status) as TextView
-        statusView.text = message
+
+        Toast.makeText(this,message,Toast.LENGTH_LONG).show()
     }
 
     private fun IncommingMsg(message: String) {
