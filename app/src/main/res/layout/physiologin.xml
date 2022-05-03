@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backbtnp"
+        app:layout_constraintStart_toEndOf="@+id/backbtnp"
+        app:layout_constraintTop_toTopOf="@+id/backbtnp"
+        app:srcCompat="@drawable/forhealth_logo_2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/backbtnp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:foreground="@drawable/buttonlayout"
+        app:cardBackgroundColor="#EEF0F6"
+
+        app:cardCornerRadius="160dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/back" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    //MainCardLayout
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:outlineAmbientShadowColor="#5AA4F4"
+        android:outlineSpotShadowColor="#559EED"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="209dp"
+                tools:layout_editor_absoluteY="82dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/physiotherapistcard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="19dp"
+                        app:cardElevation="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/physio"
+                                    android:layout_width="319dp"
+                                    android:layout_height="391dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="99dp"
+                                    android:src="@drawable/artboard_11" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/physio"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="57dp"
+                                    android:layout_marginBottom="40dp"
+                                    android:fontFamily="@font/ralewaymedium"
+                                    android:text="Hello!"
+                                    android:textColor="#082F6A"
+                                    android:textFontWeight="800"
+                                    android:textSize="30dp"
+
+
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+
+                        android:layout_marginTop="30dp"
+                        >
+
+                        <Switch
+                            android:id="@+id/bluetoothswitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="104dp"
+                            android:text="Bluetooth"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/bletoothicon"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView50" />
+
+                        <ImageView
+                            android:id="@+id/bletoothicon"
+                            android:layout_width="36dp"
+                            android:layout_height="39dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/textView3"
+                            app:srcCompat="@drawable/ic_baseline_bluetooth_disabled_24"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/bluetoothonoffmsg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bluetooth id off"
+                            app:layout_constraintStart_toStartOf="@+id/textView3"
+                            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/physiotherapistcard"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+
+                        app:layout_constraintTop_toTopOf="@+id/physiotherapistcard">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/signup"
+                            android:layout_width="479dp"
+                            android:layout_height="75dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="20dp"
+                            android:layout_marginTop="20dp"
+                            app:cardBackgroundColor="#EEF0F6"
+                            app:cardCornerRadius="50dp"
+                            app:cardElevation="4dp">
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/ralewaymedium"
+                                    android:gravity="center_horizontal"
+                                    android:text="Register"
+                                    android:textAlignment="center"
+                                    android:textColor="#042A73"
+                                    android:textFontWeight="800"
+                                    android:textSize="24dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/login"
+                            android:layout_width="479dp"
+                            android:layout_height="75dp"
+                            android:layout_below="@+id/signup"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="20dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="20dp"
+                            app:cardBackgroundColor="#EEF0F6"
+                            app:cardCornerRadius="50dp"
+                            app:cardElevation="4dp">
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/logintxt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/ralewaymedium"
+                                    android:gravity="center_horizontal"
+                                    android:text="Login"
+                                    android:textAlignment="center"
+                                    android:textColor="#042A73"
+                                    android:textFontWeight="800"
+                                    android:textSize="24dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </RelativeLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/physiotherapistcard">
+
+                        <View
+                            android:id="@+id/ellipse_104"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/circle4"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/ellipse_105"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/circle4"
+                            app:layout_constraintBottom_toBottomOf="@+id/ellipse_104"
+                            app:layout_constraintStart_toEndOf="@+id/ellipse_104"
+                            app:layout_constraintTop_toTopOf="@+id/ellipse_104"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <View
+                            android:id="@+id/ellipse_106"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/circle"
+                            app:layout_constraintBottom_toBottomOf="@+id/ellipse_104"
+                            app:layout_constraintStart_toEndOf="@+id/ellipse_105"
+                            app:layout_constraintTop_toTopOf="@+id/ellipse_104" />
+
+                        <View
+                            android:id="@+id/ellipse_107"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/circle4"
+                            app:layout_constraintBottom_toBottomOf="@+id/ellipse_104"
+                            app:layout_constraintStart_toEndOf="@+id/ellipse_106"
+                            app:layout_constraintTop_toTopOf="@+id/ellipse_104" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ForHealth Solution\'s Pvt. Ltd.</string>
+    <string name="tagline">we are for you I we are forhealth</string>
+    <string name="taglinepage1">Our core purpose is to transform the physical rehabilitation and fitness sector by developing robotic assistive technologies</string>
+    <string name="btnname">Proceed</string>
+    <string name="thankyou">Thank you for</string>
+    <string name="thankyou2">choosing ForHealth!</string>
+    <string name="thankyou3">Thank you for choosing</string>
+    <string name="forhealth1">for</string>
+    <string name="forhealth2">health!</string>
+    <!--    <string name="sentence">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus ante dapibus velit efficitur, in consectetur dui finibus.</string>-->
+    <string name="sentence">Our core purpose is to transform the physical rehabilitation and fitness sector by devloping robotic assistive technologies.</string>
+
+</resources>
