@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="266.20px"
+        android:layout_height="55.86px"
+        android:layout_marginStart="57.24px"
+        android:layout_marginLeft="83px"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/forhealth_logo_2" />
+
+    //MainCardLayout
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="142.75px"
+        android:outlineAmbientShadowColor="#5AA4F4"
+        android:outlineSpotShadowColor="#559EED"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/backbtnp"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="131dp"
+                android:layout_marginLeft="131dp"
+                android:layout_marginTop="66px"
+                android:foreground="@drawable/buttonlayout"
+                android:outlineAmbientShadowColor="#5AA4F4"
+                android:outlineSpotShadowColor="#559EED"
+                app:cardBackgroundColor="#EEF0F6"
+                app:cardCornerRadius="160dp"
+                app:cardElevation="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="65px"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="15px"
+                        android:layout_height="24px"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_back" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="355px"
+                android:layout_height="355px"
+                android:layout_marginTop="101px"
+                android:src="@drawable/probackgr"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/getstartbutton1"
+                android:layout_width="400px"
+                android:layout_height="91px"
+                android:layout_marginLeft="286px"
+                android:layout_marginTop="89px"
+                app:cardBackgroundColor="#EEF0F6"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="3dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null"
+                        android:fontFamily="@font/ralewaymedium"
+                        android:hint="Patient Name"
+                        android:textAlignment="center"
+                        android:textColor="#2E476E"
+                        android:textColorHint="#2E476E"
+                        android:textFontWeight="700"
+                        android:textSize="30px"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/getstartbutton2"
+                android:layout_width="400px"
+                android:layout_height="91px"
+                app:cardBackgroundColor="#EEF0F6"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/getstartbutton3"
+                app:layout_constraintEnd_toStartOf="@+id/getstartbutton3"
+                app:layout_constraintStart_toEndOf="@+id/getstartbutton1"
+                app:layout_constraintTop_toTopOf="@+id/getstartbutton1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null"
+                        android:fontFamily="@font/ralewaymedium"
+                        android:hint="Age"
+                        android:textAlignment="center"
+                        android:textColor="#2E476E"
+                        android:textColorHint="#2E476E"
+                        android:textFontWeight="700"
+                        android:textSize="30px"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/getstartbutton3"
+                android:layout_width="400px"
+                android:layout_height="91px"
+                android:layout_marginRight="286px"
+                app:cardBackgroundColor="#EEF0F6"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/getstartbutton1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/getstartbutton1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null"
+                        android:fontFamily="@font/ralewaymedium"
+                        android:hint="Contact"
+                        android:textAlignment="center"
+                        android:textColor="#2E476E"
+                        android:textColorHint="#2E476E"
+                        android:textFontWeight="700"
+                        android:textSize="30px"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/occupation"
+                android:layout_width="400px"
+                android:layout_height="91px"
+                android:layout_marginTop="54px"
+                app:cardBackgroundColor="#EEF0F6"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="3dp"
+                app:layout_constraintStart_toStartOf="@+id/getstartbutton1"
+                app:layout_constraintTop_toBottomOf="@+id/getstartbutton1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null"
+                        android:fontFamily="@font/ralewaymedium"
+                        android:hint="Occupation"
+                        android:textAlignment="center"
+                        android:textColor="#2E476E"
+                        android:textColorHint="#2E476E"
+                        android:textFontWeight="700"
+                        android:textSize="30px"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/getstartbutton4"
+                android:layout_width="400px"
+                android:layout_height="91px"
+                app:cardBackgroundColor="#EEF0F6"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="3dp"
+                app:layout_constraintStart_toStartOf="@+id/getstartbutton2"
+                app:layout_constraintTop_toTopOf="@+id/occupation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null"
+                        android:fontFamily="@font/ralewaymedium"
+                        android:hint="Weight"
+                        android:textAlignment="center"
+                        android:textColor="#2E476E"
+                        android:textColorHint="#2E476E"
+                        android:textFontWeight="700"
+                        android:textSize="30px"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/getstartbutton5"
+                android:layout_width="400px"
+                android:layout_height="91px"
+                app:cardBackgroundColor="#EEF0F6"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="3dp"
+                app:layout_constraintEnd_toEndOf="@+id/getstartbutton3"
+                app:layout_constraintTop_toTopOf="@+id/getstartbutton4">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null"
+                        android:fontFamily="@font/ralewaymedium"
+                        android:hint="Sex"
+                        android:textAlignment="center"
+                        android:textColor="#2E476E"
+                        android:textColorHint="#2E476E"
+                        android:textFontWeight="700"
+                        android:textSize="30px"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/getstartbutton"
+                android:layout_width="289px"
+                android:layout_height="90px"
+                app:cardBackgroundColor="#EEF0F6"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="3dp"
+                android:layout_marginTop="122px"
+                app:layout_constraintEnd_toEndOf="@+id/getstartbutton5"
+                app:layout_constraintTop_toBottomOf="@+id/getstartbutton5">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/ralewaymedium"
+                        android:text="Next"
+                        android:textAlignment="center"
+                        android:textColor="#2E476E"
+                        android:textFontWeight="700"
+                        android:textSize="30px"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/hambur"
+        android:layout_width="26px"
+        android:layout_height="20px"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="128px"
+        android:src="@drawable/ic_hambur"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
